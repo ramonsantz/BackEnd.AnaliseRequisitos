@@ -47,24 +47,21 @@ O módulo de **Autenticação de Usuários** é responsável por gerenciar o pro
 
 ### Requisitos de Usuário
 - Como usuário, quero ser capaz de me cadastrar no sistema para acessar recursos específicos.
-- Como usuário, desejo poder recuperar minha senha caso a esqueça.
-- Como usuário, quero poder me deslogar para proteger minha conta.
+- Como usuário, desejo poder recuperar minha senha caso esqueça.
+- Poder deslogar para proteger a conta.
 
 ### Requisitos de Sistema
-- O sistema deve armazenar dados de autenticação em um banco de dados relacional.
-- O módulo deve integrar-se com o serviço de e-mail para envio de notificações.
+- O sistema armazena dados de autenticação em um banco de dados.
 
 ## Análise de Viabilidade
 
 ### Tecnologias Disponíveis
-- **Linguagens de Programação:** JavaScript (Node.js), Python (Django), Ruby (Rails)
-- **Frameworks:** Express.js (para Node.js), Django (para Python), Rails (para Ruby)
-- **Banco de Dados:** PostgreSQL, MySQL
+- **Linguagens de Programação:** JavaScript, Python (Django)
+- **Frameworks:** Express.js, Django
+- **Banco de Dados:** MySQL
 
 ### Justificativas de Escolha
-- **Linguagem e Framework:** Optou-se por Node.js com Express.js devido à sua alta performance e fácil escalabilidade. A escolha do PostgreSQL é para garantir a integridade e escalabilidade dos dados.
-- **Segurança:** Utilização de bcrypt para hashing de senhas e JWT (JSON Web Token) para gerenciamento de sessões.
-- **Desempenho:** A performance será otimizada com caching e práticas recomendadas de codificação.
+- **Linguagem e Framework:** Express.js devido sua alta performance e fácil escalabilidade. A escolha do MySQL é para garantir a integridade e escalabilidade dos dados.
 
 ## Priorização de Requisitos
 
@@ -82,7 +79,7 @@ O módulo de **Autenticação de Usuários** é responsável por gerenciar o pro
   - Performance (dado o contexto de um sistema com alta demanda)
 
 - **Won’t Have (Não Terá)**
-  - Funcionalidades que não são prioritárias na fase inicial, como suporte a múltiplos fatores de autenticação.
+  - Funcionalidades na fase inicial, como suporte a vários fatores de autenticação.
 
 ### Critérios de Prioridade
 - **Valor de Negócio:** Funcionalidades básicas de autenticação são cruciais para qualquer sistema e têm alta prioridade.
