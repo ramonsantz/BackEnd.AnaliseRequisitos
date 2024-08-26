@@ -12,17 +12,17 @@ O módulo de **Autenticação de Usuários** é responsável por gerenciar o pro
   - O e-mail deve ser único para cada usuário.
 
 - **Login de Usuário**
-  - O sistema deve permitir que usuários existentes façam login com e-mail e senha.
-  - O sistema deve gerar um token de sessão válido por um período configurável.
+  - Permitir aos usuários existentes façam login com e-mail e senha.
+  - Sistema deve gerar um token de sessão válido por um período configurável.
 
 - **Recuperação de Senha**
-  - O sistema deve fornecer uma funcionalidade para recuperação de senha via e-mail.
+  - Fornecer uma funcionalidade para recuperação de senha via e-mail.
 
 - **Autorização de Acesso**
   - O sistema deve permitir o acesso a recursos com base nos papéis (roles) dos usuários (ex: administrador, usuário padrão).
 
 - **Logout**
-  - O sistema deve permitir que usuários se deslogue e invalidem seu token de sessão.
+  - Permitir que usuários se deslogue e invalidem seu token de sessão.
 
 ### Requisitos Não Funcionais
 - **Performance**
@@ -33,10 +33,10 @@ O módulo de **Autenticação de Usuários** é responsável por gerenciar o pro
   - O módulo deve seguir as melhores práticas de segurança para proteger os dados dos usuários.
 
 - **Escalabilidade**
-  - O módulo deve suportar pelo menos 1000 requisições simultâneas.
+  - Deve suportar pelo menos 1000 requisições simultâneas.
 
 - **Compatibilidade**
-  - O módulo deve ser compatível com os principais navegadores e dispositivos móveis.
+  - Módulo deve ser compatível com os principais navegadores e dispositivos móveis.
 
 ### Regras de Negócio
 - **Política de Senha**
