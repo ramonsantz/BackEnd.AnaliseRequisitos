@@ -3,7 +3,6 @@ import { AuthService } from '../services/authService';
 
 const authService = new AuthService();
 
-// Registro de usuário
 export const register = async (req: Request, res: Response) => {
   const { name, email, password } = req.body;
 
@@ -15,7 +14,6 @@ export const register = async (req: Request, res: Response) => {
   }
 };
 
-// Login de usuário
 export const login = async (req: Request, res: Response) => {
   const { email, password } = req.body;
 
