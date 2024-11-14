@@ -1,0 +1,3 @@
+[submodule "livro-api"]
+	path = livro-api
+	url = https://github.com/ramonsantz/BackEnd.AnaliseRequisitos.git
