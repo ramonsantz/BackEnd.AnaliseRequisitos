@@ -56,9 +56,8 @@ O módulo de **Autenticação de Usuários** é responsável por gerenciar o pro
 ## Análise de Viabilidade
 
 ### Tecnologias Disponíveis
-- **Linguagens de Programação:** JavaScript, Python (Django)
-- **Frameworks:** Express.js, Django
-- **Banco de Dados:** MySQL
+- **Linguagens de Programação:** JavaScript, TypeScript
+- **Banco de Dados:** Portegresql
 
 ### Justificativas de Escolha
 - **Linguagem e Framework:** Express.js devido sua alta performance e fácil escalabilidade. A escolha do MySQL é para garantir a integridade e escalabilidade dos dados.
