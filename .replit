@@ -1,16 +1,18 @@
-run = "tsx index.ts"
-entrypoint = "index.ts"
-hidden = [".config", "package-lock.json", "tsconfig.json"]
-modules = ["nodejs-20"]
+entrypoint = "index.js"
+modules = ["nodejs-22"]
+hidden = [".config", "package-lock.json"]
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix", "package.json", "package-lock.json"]
 
 [nix]
 channel = "stable-24_05"
 
-[gitHubImport]
-requiredFiles = [".replit", "replit.nix", ".config"]
+[unitTest]
+language = "nodejs"
 
 [deployment]
-run = ["tsx", "index.ts"]
+run = ["node", "index.js"]
 deploymentTarget = "cloudrun"
 ignorePorts = false
 

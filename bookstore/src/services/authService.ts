@@ -9,11 +9,13 @@ export class AuthService {
     this.userRepository = new UserRepository();
   }
 
+ 
   async registerUser(name: string, email: string, password: string) {
     const passwordHash = hashPassword(password);
     const user = await this.userRepository.addUser(name, email, passwordHash);
     return user;
   }
+
 
   async loginUser(email: string, password: string) {
     const user = await this.userRepository.getUserByEmail(email);
@@ -22,7 +24,7 @@ export class AuthService {
     const isPasswordValid = comparePassword(password, user.passwordHash);
     if (!isPasswordValid) throw new Error('Senha incorreta');
 
-    createSession(user.id); // Cria a sessão
+    createSession(user.id); 
     return user;
   }
 }
